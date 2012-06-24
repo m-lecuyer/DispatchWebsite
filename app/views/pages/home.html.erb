@@ -1,0 +1,16 @@
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit">
+
+	<%= if @rubric == 'project'
+	    	render 'homeProject'
+	    elsif @rubric == 'progress'
+	    	render 'homeProgress'
+	    elsif @rubric == 'team'
+	    	render 'homeTeam'
+	    end
+	%>
+</div>
+
+<!-- Example row of columns -->
+<%= render 'pages/homeDownColumns' %>
+
