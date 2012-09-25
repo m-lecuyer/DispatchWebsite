@@ -2,6 +2,7 @@ PersoSite::Application.routes.draw do
   match "/home(/:rubric)" => "pages#home"
   match '/magic',   :to => 'pages#magic'
   match '/contact',    :to => 'pages#contact'
+  match '/news',   :to => 'pages#news'
 
   root :to => 'pages#home'
 

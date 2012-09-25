@@ -11,6 +11,10 @@ class PagesController < ApplicationController
   	@activeButton = "magic"
   end
 
+  def news
+	@activeButton = "news"
+  end
+
   def contact
   	@activeButton = "contact"
   end
